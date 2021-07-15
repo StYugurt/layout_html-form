@@ -1,8 +1,9 @@
 .enter_field {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
   
 .fieldset {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  display: block;
 }

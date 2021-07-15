@@ -13,30 +13,34 @@
     <form
         action="https://mate-academy-form-lesson.herokuapp.com/create-application"
         method="POST"
-        onsubmit="onSubmit()">
+        onsubmit="onSubmit()"
+    >
       <fieldset class="fieldset">
         <legend class="legend">Personal information</legend>
 
-        <label for="" class="enter_field">
+        <label for="surname" class="enter_field">
           Surname:
           <input
-            id=""
+            id="surname"
             type="text"
             name="Surname"
             autocomplete="off"
-            required>
+            required
+          >
         </label>
 
-        <label for="" class="enter_field">
+        <label for="name" class="enter_field">
           Name:
           <input
             type="text"
+            id="name"
             name="Name"
             autocomplete="off"
-            required>
+            required
+            >
         </label>
 
-        <label for="" class="enter_field">
+        <label for="age" class="enter_field">
           How old are You?
           <input
             type="number"
@@ -49,17 +53,18 @@
           <label for="age"></label>
         </label>
 
-        <label for="" class="enter_field">
+        <label for="birth-date" class="enter_field">
           Full date of birth:
           <input
             type="date"
+            id="birth-date"
             name="date of birth"
             autocomplete="off"
             required
           >
         </label>
 
-        <label for="" class="enter_field_terms">
+        <label for="terms" class="enter_field_terms">
           <label for="terms">
             I accept the term of the agreement
           </label>
@@ -67,32 +72,37 @@
             type="checkbox"
             name="accept-the-term"
             id="terms"
-            required>
+            required
+          >
         </label>
       </fieldset>
 
       <fieldset class="fieldset">
         <legend class="legend">Registration</legend>
 
-        <label for="" class="form-field">
+        <label for="post-name" class="enter_field">
           E-mail:
           <input
             type="email"
             name="email"
+            id="post-name"
             placeholder="email@example.com"
             autocomplete="off"
-            required>
+            required
+          >
         </label>
 
-        <label for="" class="enter_field_terms">
+        <label for="password" class="enter_field_terms">
           Password:
           <input
             type="password"
+            id="password"
             name="password"
             minlength="5"
             maxlength="15"
             autocomplete="off"
-            required>
+            required
+          >
         </label>
       </fieldset>
 
@@ -102,20 +112,22 @@
         <div class="enter_field">
           Do you love cats?
 
-          <label for="">
+          <label for="cats-positive">
             <input
               type="radio"
               name="cats"
               value="yes"
+              id="cats-positive"
             >
             Yes
           </label>
 
-          <label for="">
+          <label for="cats-negative">
             <input
               type="radio"
               name="cats"
               value="no"
+              id="cats-negative"
             >
             No
           </label>
@@ -131,19 +143,24 @@
           <label for="color"></label>
         </div>
 
-        <div class="form-field">
+        <div class="enter_field">
           What time do you go to bed?
           <input
             type="time"
-            id="go_to_bed"
+            id="go-to-bed"
             name="start-sleep"
           >
-          <label for="go_to_bed"></label>
+          <label for="go-to-bed" class="form-field"></label>
         </div>
 
-        <label for="" class="enter_field">
+        <label for="auto" class="enter_field">
           What are your favorite brand of cars?
-          <select name="brand" multiple>
+          <select
+            name="brand"
+            id="auto"
+            class="form_field"
+            multiple
+          >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
@@ -167,15 +184,15 @@
       <fieldset class="fieldset">
         <legend class="legend">Additional info:</legend>
 
-        <label for="" class="form-field">
+        <label for="comments" class="enter_field">
           Comments:
-          <textarea name="comments">
+          <textarea name="comments" id="comments">
           </textarea>
         </label>
 
-        <label for="" class="enter_field_term">
+        <label for="propose-to-recomend" class="enter_field_term">
           Would you recommend us?
-          <select name="recomend" >
+          <select name="recomend" id="propose-to-recomend" >
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
